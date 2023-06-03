@@ -51,7 +51,7 @@ namespace CrudOperations.Controllers
         {
             _dbContext.Brands.Add(brand);
             await _dbContext.SaveChangesAsync();
-            //return CreatedAtAction(nameof(GetById), new { id = brand.Id }, brand);
+            //return CreatedAtAction(nameof(GetById), new { id = brand.Id }, brand); // return the object created
             return Ok();
         }
 
